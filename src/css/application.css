@@ -1,1 +1,10 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.nummberButtons{
+	-fx-background-color:#00BFFF;
+	-fx-border-color:white;
+}
+
+.operationButtons{
+	-fx-background-color:orange;
+	-fx-border-color:white;
+}
