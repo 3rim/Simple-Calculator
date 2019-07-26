@@ -1,7 +1,7 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 .numberButtons{
-	-fx-background-color:#0080ff;
-	-fx-border-color:white;
+	-fx-background-color:#3b6ba1;
+	-fx-border-color:#617891;
 	-fx-font-size:20px;
 	-fx-text-fill:white;
 }
@@ -13,15 +13,24 @@
 	-fx-text-fill:black;
 }
 .operationButtons{
-	-fx-background-color:#800000;
-	-fx-border-color:white;
-	-fx-font-size:15px;
+	-fx-background-color:#2a3e54;
+	-fx-border-color:#617891;
+	-fx-font-size:20px;
 	-fx-text-fill:white;
 }
 .operationButtons:hover{
-	-fx-background-color:#b30000;
+	-fx-background-color:#3399ff;
 }
 .operationButtons:pressed{
 	-fx-background-color:white;
 	-fx-text-fill:black;
 }
+
+.label{
+	-fx-background-color:#617891;
+	-fx-text-fill:white;
+	}
+	
+#gridPane{
+	-fx-border-color:#617891;
+	}
