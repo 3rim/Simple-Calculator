@@ -42,10 +42,16 @@ public class Controller implements Initializable
 	   model = new Model();
 	}
 	
-
+	/**
+	 * handel numpad action.
+	 */
 	public void pressedNumbpad(ActionEvent event)
 	{   
-	    if(clearResultLabel)
+	    if(startsWithZero())
+	        resultLabel.setText(""); // prevents numbers like 00 , 000 ,0000 ...014 etc.
+	    
+	     
+	    if(clearResultLabel)   // after an operation was pressed clean the resultLabel for next input.
 	    {
 	        resultLabel.setText("");
 	        clearResultLabel = false;
@@ -99,6 +105,7 @@ public class Controller implements Initializable
     }
 	
     /**
+     * Show the result which is the result +-/* the number which is currently in the resultLabel.
      * 
      */
     public void equalsButton()
@@ -140,6 +147,14 @@ public class Controller implements Initializable
 	{
 	    String value = ((Button) e.getSource()).getText();
 	    return value;
+	}
+	
+	/**
+	 * check if first number is 0
+	 */
+	private boolean startsWithZero()
+	{
+	    return resultLabel.getText().startsWith("0");
 	}
 	
 	@FXML
