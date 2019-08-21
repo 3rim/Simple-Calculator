@@ -1,4 +1,8 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#anchorPane{
+	-fx-background-color:#617891
+	}
+
 .numberButtons{
 	-fx-background-color:#3b6ba1;
 	-fx-border-color:#617891;
